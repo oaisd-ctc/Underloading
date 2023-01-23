@@ -1,9 +1,11 @@
 <!--- [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-f4981d0f882b2a3f0472912d15f9806d57e124e0fc890972558857b51b24a6f9.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=9838360) --->
+<!--- Commented above just to make the readme look nicer/ more appealing to the eyes. --->
 
 # **Reinventing The Wheel**
 ## **A project coded by Lukas, Matty, and pluto**
-<!--- Yes, I prefer my name (pluto) without any capitals --->
-<!--- Also, yes, I partially learned markdown for github --->
+<!--- Names are in alphabetical order. --->
+<!--- Yes, I prefer my name (pluto) without any capitals. --->
+<!--- Also, yes, I partially learned markdown just for github. --->
 <hr>
 
 ### **What is this project about?**
@@ -18,14 +20,15 @@ To create a NuGet package that other developers may use to help them complete di
 
 <hr>
 
-## **What Functions are going to be made?**
+## **What Functions are covered?**
 <hr>
 
 There will be many functions for each arrays, strings and math.
 <br>
 
-Here is a list of the functions that we will be replicating(These already exist).
-
+Here is a list of the functions that we will be replicating(As these functions already exist).
+<!--- "Additional Method 1, 2, 3 & 4" are all placeholders until we decide what function we will make/ replicate.
+        When that is decided, I can replace it with a description of whatever we make. --->
 <br>
 
 ### **String Funcitons**
