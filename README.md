@@ -2,7 +2,8 @@
 
 # **Reinventing The Wheel**
 ## **A project coded by Lukas, Matty, and pluto**
-<!--- Yes, I prefer my name (pluto) without any capitals--->
+<!--- Yes, I prefer my name (pluto) without any capitals --->
+<!--- Also, yes, I partially learned markdown for github --->
 <hr>
 
 ### **What is this project about?**
