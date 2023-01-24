@@ -29,7 +29,6 @@ There will be many functions for each arrays, strings and math.
 Here is a list of the functions that we will be replicating(As these functions already exist).
 <!--- "Additional Method 1, 2, 3 & 4" are all placeholders until we decide what function we will make/ replicate.
         When that is decided, I can replace it with a description of whatever we make. --->
-<br>
 
 ### **String Funcitons**
 - ToUpper | Converts every letter of a string to uppercase
