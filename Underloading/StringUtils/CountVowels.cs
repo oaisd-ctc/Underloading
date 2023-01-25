@@ -4,7 +4,7 @@ namespace StringUtils
     {
         public static int NumberOfVowels()
         {
-            Console.WriteLine("Length");
+            Console.WriteLine("CountVowels");
             Console.Write("Input a string to see the number of vowels in it: ");
             string input = UserInput();
 

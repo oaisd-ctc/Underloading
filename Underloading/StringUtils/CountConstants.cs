@@ -4,7 +4,7 @@ namespace StringUtils
     {
         public static int NumberOfConstants()
         {
-            Console.WriteLine("Length");
+            Console.WriteLine("CountConstants");
             Console.Write("Input a string to see the number of constants in it: ");
             string input = UserInput();
 
