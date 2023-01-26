@@ -17,5 +17,21 @@ namespace ArrayUtils
             }
             return min;
         }
+
+        public static double Min(double[] x)
+        {
+            double min = x[0];
+            int i = 0;
+
+            foreach(int y in x)
+            {
+                if (x[i] < min)
+                {
+                    min = x[y];
+                }
+                i++;
+            }
+            return min;
+        }
     }
 }
