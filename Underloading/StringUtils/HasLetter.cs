@@ -11,9 +11,7 @@ namespace StringUtils
             Console.Write("Input a single character to search for the index and how many are (if any) are in the string: ");
 
             string letterInInput = "";
-            string letterFound = "{ ";
             string returnQuery = "";
-            char prevLetter = '℗';
 
             try
             {
@@ -23,66 +21,19 @@ namespace StringUtils
 
                 foreach (char letter in input)
                 {
-                    if ((i < input.Length) && (i != (input.Length - 1)))
+                    if (letter == letterSearch && i < input.Length)
                     {
-                        if (((letter == letterSearch) && (i == 0)) || ((prevLetter != letterSearch) && (letter == letterSearch) && (i - 1 == 0)))
-                        {
-                            letterFound += $"{i}";
-
-                            letterInInput = "true";
-                        }
-                        else if ((((prevLetter == letterSearch) && (letter == letterSearch)) || ((prevLetter == letterSearch) && (letter == letterSearch)) || ((prevLetter != letterSearch) && (letter == letterSearch))) && (i > 0))
-                        {
-                            letterFound += $", {i}";
-
-                            letterInInput = "true";
-                        }
-                    }
-                    else if (i == (input.Length - 1))
-                    {
-                        if ((letter == letterSearch && i == 0) || ((prevLetter != letterSearch) && (letter == letterSearch && i > 0)))
-                        {
-                            letterFound += $"{i}";
-
-                            letterInInput = "true";
-                        }
-                        else if ((prevLetter == letterSearch) && (letter == letterSearch))
-                        {
-                            letterFound += $", {i}";
-
-                            letterInInput = "true";
-                        }
-                        else if ((letter == letterSearch) && (prevLetter == letterSearch))
-                        {
-                            letterFound += $"{i}";
-                        }
-                        else if ((letter != letterSearch) && (prevLetter != letterSearch))
-                        {
-                            continue;
-                        }
+                        letterInInput = "true";
+                        i++;
                     }
                     else
                     {
-                        if (letter == letterSearch)
-                        {
-                            letterFound += $", {i} }}";
-                        }
-                        else if (letter != letterSearch && letterFound.Length == 2)
-                        {
-                            letterFound += "-1 }";
-
-                            letterInInput = "false";
-                        }
-                        else if (letter != letterSearch && letterFound.Length > 2)
-                        {
-                            letterFound += " }";
-                        }
+                        i++;
+                        continue;
                     }
-
-                    i++;
                 }
 
-                returnQuery += $"{{ Found in whole input: {letterInInput}, Found in indices: {letterFound} }} }}";
+                returnQuery += $"Found in whole input: {letterInInput}";
             }
             catch (FormatException err)
             {
