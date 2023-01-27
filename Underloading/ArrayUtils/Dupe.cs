@@ -12,7 +12,7 @@ namespace ArrayUtils
 
             int[] x2 = new int[x.Length];
 
-            string h = $"{thing.ArrayToString(x)}\n";
+            string h = "";
 
             int r = 0;
             for (int i = 0; i < mult; i++)
