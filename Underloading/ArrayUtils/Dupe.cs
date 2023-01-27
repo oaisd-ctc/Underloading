@@ -5,7 +5,7 @@ namespace ArrayUtils
         public static string Dupe(int[] x)
         {
             Console.WriteLine("How many times would you like to duplicate your array?");
-            Console.WriteLine("(Note: If you enter 1, the array will make 1 copy.)");
+            Console.WriteLine("(Note: If you enter 1, the array will make no copies (it gets worse).)");
             int num = Convert.ToInt32(Console.ReadLine());
 
             int mult = x.Length * num;
