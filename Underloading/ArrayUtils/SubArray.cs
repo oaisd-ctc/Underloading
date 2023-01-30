@@ -5,27 +5,37 @@ namespace ArrayUtils
         public static int Sub(int[] x, int[] y)
         {
             int subtracted = 0;
+            int subtracted2 = 0;
             int i = 0;
+            int r = 0;
 
-            while (i <= x.Length -1)
+            while (i < x.Length && r < y.Length)
             {
-                subtracted = x[i] - y[i];
-                i++;
+                if (i <= x.Length)
+                {
+                    subtracted += x[i] - y[i];
+                    i++;
+                }
+                else if (r <= y.Length)
+                {
+                    subtracted2 += x[r] - y[r];
+                    r++;
+                }
             }
-            return subtracted;
+            return subtracted - subtracted2;
         }
 
-        public static double Sub(double[] x, double[] y)
-        {
-            double subtracted = 0;
-            int i = 0;
+        // public static double Sub(double[] x, double[] y)
+        // {
+        //     double subtracted = 0;
+        //     int i = 0;
 
-            while (i <= x.Length -1)
-            {
-                subtracted = x[i] - y[i];
-                i++;
-            }
-            return subtracted;
-        }
+        //     while (i <= x.Length)
+        //     {
+        //         subtracted += x[i] - y[i];
+        //         i++;
+        //     }
+        //     return subtracted;
+        // }
     }
 }
