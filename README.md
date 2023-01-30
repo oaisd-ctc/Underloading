@@ -38,7 +38,7 @@ Here is a list of the functions that we will be replicating(As these functions a
 - CountVowels | Counts the number of vowels in a string
 - CountConsonants | Counts the number of consonants in a string
 - HasLetter | Checks to see if string has letter
-- Additional Method 1
+- ToHTML | Outputs simple code for a webpage based on whats in a string(multiple)
 - Additional Method 2
 - Additional Method 3
 - Additional Method 4
@@ -55,8 +55,8 @@ Here is a list of the functions that we will be replicating(As these functions a
 - Product | Calculates the product of an array
 - ToString | Converts an array into a string
 - Dupe | Duplicates an array a specified amount of time
-- Additional Method 3
-- Additional Method 4
+- AddArrays | Adds two arrays together
+- SubArrays | Subtracts two arrays from each other
 
 <br>
 
@@ -70,7 +70,7 @@ Here is a list of the functions that we will be replicating(As these functions a
 - Subtract | Subtracts numbers
 - Divide | Divides numbers
 - Multiply | Multiplies numbers together
-- Additional Method 1
+- Mod | Performes modulus on two numbers
 - Additional Method 2
 - Additional Method 3
 - Additional Method 4
