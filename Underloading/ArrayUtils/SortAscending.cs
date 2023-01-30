@@ -21,7 +21,7 @@ namespace ArrayUtils
                     }
                 }
             }
-            string xString = thing.ArrayToString(x);
+            string xString = OutputToString.ConvertToString(x);
             return xString;
         }
 
@@ -41,7 +41,7 @@ namespace ArrayUtils
                     }
                 }
             }
-            string xString = thing.ArrayToString(x);
+            string xString = OutputToString.ConvertToString(x);
             return xString;
         }
     }

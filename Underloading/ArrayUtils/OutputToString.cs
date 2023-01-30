@@ -22,5 +22,25 @@ namespace ArrayUtils
 
             return inputToString;
         }
+
+        public static string ConvertToString(double[] x)
+        {
+            string inputToString = "{ ";
+            int i = 0;
+
+            foreach (int item in x)
+            {
+                if (i < x.Length - 1)
+                {
+                    inputToString += $"{Convert.ToString(x.GetValue(i))}, ";
+                }
+                else
+                {
+                    inputToString += $"{Convert.ToString(x.GetValue(i))} }}";
+                }
+                i++;
+            }
+            return inputToString;
+        }
     }
 }

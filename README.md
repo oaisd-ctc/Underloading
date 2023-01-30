@@ -53,8 +53,8 @@ Here is a list of the functions that we will be replicating(As these functions a
 - SortDescending | Sorts numbers in an array in descending order
 - Sum | Calculates the sum of an array
 - Product | Calculates the product of an array
-- Additional Method 1
-- Additional Method 2
+- ToString | Converts an array into a string
+- Dupe | Duplicates an array a specified amount of time
 - Additional Method 3
 - Additional Method 4
 

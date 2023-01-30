@@ -1,4 +1,4 @@
-using ArrayUtils;
+﻿using ArrayUtils;
 using System;
 
 namespace Underloading
@@ -8,11 +8,7 @@ namespace Underloading
         public static void Main(string[] args)
         {
             int[] intArr = {1, 9, 4, 18, 7, 53};
-
             double[] doubleArr = {1.1, 9.9, 4.4, 18.18, 7.7, 53.53};
-
-            string dupeArr = DupedArray.Dupe(intArr);
-            Console.WriteLine(dupeArr);
 
             // double intAvg = averaging.Average(intArr);
             // Console.WriteLine("The average of your int array is: " + intAvg);
@@ -48,6 +44,11 @@ namespace Underloading
             // Console.WriteLine("Your int array sorted going downwards is: " + intSortDown);
             // string doubleSortDown = descent.SortDescending(doubleArr);
             // Console.WriteLine("Your double array sorted going downwards is: " + doubleSortDown);
+
+            // string dupeIntArr = DupeArray.Dupe(intArr);
+            // Console.WriteLine(dupeIntArr);
+            // string dupeDoubleArr = DupeArray.Dupe(doubleArr);
+            // Console.WriteLine(dupeDoubleArr);
         }
     }
 }
