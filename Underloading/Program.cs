@@ -1,4 +1,4 @@
-﻿using ArrayUtils;
+using ArrayUtils;
 using System;
 
 namespace Underloading
@@ -8,10 +8,11 @@ namespace Underloading
         public static void Main(string[] args)
         {
             int[] intArr = {1, 9, 4, 18, 7, 53};
+
             double[] doubleArr = {1.1, 9.9, 4.4, 18.18, 7.7, 53.53};
 
-            string fard = duplicator.Dupe(intArr);
-            Console.WriteLine(fard);
+            string dupeArr = DupedArray.Dupe(intArr);
+            Console.WriteLine(dupeArr);
 
             // double intAvg = averaging.Average(intArr);
             // Console.WriteLine("The average of your int array is: " + intAvg);
