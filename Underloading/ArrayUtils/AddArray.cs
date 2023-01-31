@@ -54,14 +54,24 @@ namespace ArrayUtils
         public static double AddArray(double[] x, double[] y)
         {
             double added = 0;
+            double added2 = 0;
             int i = 0;
+            int r = 0;
 
             while (i <= x.Length - 1)
             {
-                added = x[i] + y[i];
-                i++;
+                if(i <= x.Length && r < y.Length)
+                {
+                    added = x[i] + y[i];
+                    i++;
+                }
+                else if (r <= y.Length)
+                {
+                    added2 += x[r] + y[r];
+                    r++;
+                }
             }
-            return added;
+            return added + added2;
         }
     }
 }

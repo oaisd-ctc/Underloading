@@ -40,7 +40,7 @@ namespace ArrayUtils
 
             int mult = (x.Length + 1) * num;
 
-            int[] y = new int[x.Length];
+            double[] y = new double[x.Length];
 
             string fullString = "";
 
@@ -49,14 +49,14 @@ namespace ArrayUtils
             {
                 if (r < x.Length)
                 {
-                    y[r] = (int) x[r];
+                    y[r] = x[r];
                     r++;
                 }
                 else if (r == x.Length)
                 {
                     r = 0;
 
-                    int[] newerArr = y;
+                    double[] newerArr = y;
                     fullString += $"{OutputToString.ConvertToString(newerArr)}\n";
                 }
             }
