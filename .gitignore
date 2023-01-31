@@ -264,3 +264,6 @@ FakesAssemblies/
 
 # VSCode User Generated files
 .vscode/settings.json
+
+# StringUtils Generated Files
+output.txt
