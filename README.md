@@ -14,9 +14,9 @@
 The goal of this project is:
 <br>
 To create a NuGet package that other developers may use to help them complete difficult tasks that involve:
-- Arrays
-- Strings
-- And math.
+- Arrays... what I need... in my pay...
+- Strings... with ridiculous memes... and markup...
+- And math... lots of math... I can't add up how many times I had to fix a math related thing here...
 
 <hr>
 
@@ -38,10 +38,10 @@ Here is a list of the functions that we will be replicating(As these functions a
 - CountVowels | Counts the number of vowels in a string
 - CountConsonants | Counts the number of consonants in a string
 - HasLetter | Checks to see if string has letter
-- Additional Method 1
-- Additional Method 2
-- Additional Method 3
-- Additional Method 4
+- ToFortnite | Floods the console with a meme, you'll see ;)
+- ToCharArray | Converts a string to a character array
+- ToHTML | Outputs your three inputs in a very, very basic HTML markdown structure, with correct formatting
+- ToFile | Outputs the input to a file called "../output.txt"
 
 <br>
 
