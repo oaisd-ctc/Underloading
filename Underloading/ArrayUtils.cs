@@ -1,4 +1,4 @@
-namespace ArrayUtils
+namespace Underloading
 {
     public static class ArrayUtils
     {
@@ -197,7 +197,7 @@ namespace ArrayUtils
                     }
                 }
             }
-            string xString = OutputToString.ConvertToString(x);
+            string xString = ConvertToString(x);
             return xString;
         }
 
@@ -213,7 +213,7 @@ namespace ArrayUtils
         /// </summary>
         public static string SortAscending(double[] x)
         {
-            int t = 0;
+            double t = 0;
 
             for (int i = 0; i <= x.Length - 1; i++)
             {
@@ -227,7 +227,7 @@ namespace ArrayUtils
                     }
                 }
             }
-            string xString = OutputToString.ConvertToString(x);
+            string xString = ConvertToString(x);
             return xString;
         }
 
@@ -357,15 +357,19 @@ namespace ArrayUtils
                 if (i <= x.Length)
                 {
                     subtracted += x[i] - y[i];
+                    Console.WriteLine(x.GetValue(i));
+                    Console.WriteLine(y.GetValue(i));
                     i++;
                 }
                 else if (r <= y.Length)
                 {
                     subtracted2 += x[r] - y[r];
+                    Console.WriteLine(x.GetValue(r));
+                    Console.WriteLine(y.GetValue(r));
                     r++;
                 }
             }
-            return subtracted - subtracted2;
+            return subtracted2 - subtracted;
         }
 
         /// <summary>
@@ -656,7 +660,7 @@ namespace ArrayUtils
                     r = 0;
 
                     int[] newerArr = y;
-                    fullString += $"{OutputToString.ConvertToString(newerArr)}\n";
+                    fullString += $"{ConvertToString(newerArr)}\n";
                 }
             }
 
@@ -697,7 +701,7 @@ namespace ArrayUtils
                     r = 0;
 
                     double[] newerArr = y;
-                    fullString += $"{OutputToString.ConvertToString(newerArr)}\n";
+                    fullString += $"{ConvertToString(newerArr)}\n";
                 }
             }
             return fullString;

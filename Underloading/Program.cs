@@ -1,4 +1,4 @@
-﻿using ArrayUtils;
+﻿using Underloading;
 using System;
 
 namespace Underloading
@@ -7,12 +7,12 @@ namespace Underloading
     {
         public static void Main(string[] args)
         {
-            double[] testArray1 = {1.1, 4.4, 18.18, 7.7, 9.9, 53.53};
-            double[] testArray2 = {2.2, 5.5, 19.19, 8.8, 10.10, 54.54};
+            int[] testArray1 = {1, 4, 18, 7, 9, 53};
+            int[] testArray2 = {2, 5, 19, 8, 10, 54};
 
-            double ans = submissiveArray.SubArray(testArray1, testArray2);
+            int ans = ArrayUtils.SubArray(testArray1, testArray2);
 
-            Console.WriteLine(ans);
+            Console.WriteLine("The answer is: " + ans);
         }
     }
 }
