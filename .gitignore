@@ -267,3 +267,6 @@ FakesAssemblies/
 
 # StringUtils Generated Files
 output.txt
+
+# Templates
+*.*.template
