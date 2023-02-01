@@ -581,6 +581,14 @@ namespace Underloading
             return HTMLString;
         }
 
+        /**
+         * <summary>
+         * Gathers the user input in a single character
+         * </summary>
+         * <returns>
+         * The user input as a character
+         * </returns>
+         */
         public static char UserInputChar()
         {
             char userInput = Convert.ToChar(Console.ReadLine());
@@ -588,6 +596,14 @@ namespace Underloading
             return userInput;
         }
 
+        /**
+         * <summary>
+         * Gathers the user input in a string
+         * </summary>
+         * <returns>
+         * The user input as a string
+         * </returns>
+         */
         public static string UserInput()
         {
             string userInput = Console.ReadLine();
