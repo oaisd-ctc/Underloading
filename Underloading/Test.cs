@@ -32,7 +32,7 @@ public class Tests
         int[] testArray2 = {2, 5, 19, 8, 10, 54};
         int desiredOutcome = -188;
 
-        Assert.Equal(desiredOutcome, ArrayUtils.submissiveArray.Sub(testArray1, testArray2));
+        Assert.Equal(desiredOutcome, ArrayUtils.submissiveArray.SubArray(testArray1, testArray2));
     }
     [Fact]
     public void test_sub_array_with_doubles()
@@ -41,7 +41,7 @@ public class Tests
         double[] testArray2 = {2.2, 5.5, 19.19, 8.8, 10.10, 54.54};
         double desiredOutcome = -192.94;
 
-        Assert.Equal(desiredOutcome, ArrayUtils.submissiveArray.Sub(testArray1, testArray2));
+        Assert.Equal(desiredOutcome, ArrayUtils.submissiveArray.SubArray(testArray1, testArray2));
     }
 
 

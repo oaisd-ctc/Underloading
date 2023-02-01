@@ -2,7 +2,17 @@ namespace ArrayUtils
 {
     public static class submissiveArray
     {
-        public static int Sub(int[] x, int[] y)
+        /// <summary>
+        /// <c>SubArray</c> subtracts two integer arrays from each other.
+        /// <para>
+        /// Requires:
+        /// </para>
+        /// <list type="number">
+        /// <item><description><para><em>Two integer arrays</em></para></description></item>
+        /// </list>
+        /// <returns><strong>An int containing the difference of the two arrays</strong></returns>
+        /// </summary>
+        public static int SubArray(int[] x, int[] y)
         {
             int subtracted = 0;
             int subtracted2 = 0;
@@ -25,7 +35,17 @@ namespace ArrayUtils
             return subtracted - subtracted2;
         }
 
-        public static double Sub(double[] x, double[] y)
+        /// <summary>
+        /// <c>SubArray</c> subtracts two double arrays from each other.
+        /// <para>
+        /// Requires:
+        /// </para>
+        /// <list type="number">
+        /// <item><description><para><em>Two double arrays</em></para></description></item>
+        /// </list>
+        /// <returns><strong>An int containing the difference of the two arrays</strong></returns>
+        /// </summary>
+        public static double SubArray(double[] x, double[] y)
         {
             double subtracted = 0;
             double subtracted2 = 0;

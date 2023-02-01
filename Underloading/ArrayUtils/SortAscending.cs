@@ -5,6 +5,16 @@ namespace ArrayUtils
 {
     public static class ascent
     {
+        /// <summary>
+        /// <c>SortAscending</c> sorts an integer array in ascending order.
+        /// <para>
+        /// Requires:
+        /// </para>
+        /// <list type="number">
+        /// <item><description><para><em>An integer array</em></para></description></item>
+        /// </list>
+        /// <returns><strong>The sorted integer array</strong></returns>
+        /// </summary>
         public static string SortAscending(int[] x)
         {
             int t = 0;
@@ -25,6 +35,16 @@ namespace ArrayUtils
             return xString;
         }
 
+        /// <summary>
+        /// <c>SortAscending</c> sorts a double array in ascending order.
+        /// <para>
+        /// Requires:
+        /// </para>
+        /// <list type="number">
+        /// <item><description><para><em>A double array</em></para></description></item>
+        /// </list>
+        /// <returns><strong>The sorted double array</strong></returns>
+        /// </summary>
         public static string SortAscending(double[] x)
         {
             int t = 0;

@@ -2,6 +2,16 @@ namespace ArrayUtils
 {
     public class DupeArray
     {
+        /// <summary>
+        /// <c>DupeArray</c> duplicates an array the amount of times the user specifies.
+        /// <para>
+        /// Requires:
+        /// </para>
+        /// <list type="number">
+        /// <item><description><para><em>An integer array</em></para></description></item>
+        /// </list>
+        /// <returns><strong>A string containing the duped arrays</strong></returns>
+        /// </summary>
         public static string Dupe(int[] x)
         {
             Console.Write("Enter how many times would you like to duplicate your array: ");
@@ -33,6 +43,16 @@ namespace ArrayUtils
             return fullString;
         }
         
+        /// <summary>
+        /// <c>DupeArray</c> duplicates an array the amount of times the user specifies.
+        /// <para>
+        /// Requires:
+        /// </para>
+        /// <list type="number">
+        /// <item><description><para><em>A double array</em></para></description></item>
+        /// </list>
+        /// <returns><strong>A string containing the duped arrays</strong></returns>
+        /// </summary>
         public static string Dupe(double[] x)
         {
             Console.Write("Enter how many times would you like to duplicate your array: ");
