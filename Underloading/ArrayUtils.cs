@@ -347,29 +347,13 @@ namespace Underloading
         /// </summary>
         public static int SubArray(int[] x, int[] y)
         {
-            int subtracted = 0;
-            int subtracted2 = 0;
-            int i = 0;
-            int r = 0;
+            double arraySub1 = Average(x);
+            int subtracted = (int) arraySub1 * x.Length;
 
-            while (i < x.Length && r < y.Length)
-            {
-                if (i <= x.Length)
-                {
-                    subtracted += x[i] - y[i];
-                    Console.WriteLine(x.GetValue(i));
-                    Console.WriteLine(y.GetValue(i));
-                    i++;
-                }
-                else if (r <= y.Length)
-                {
-                    subtracted2 += x[r] - y[r];
-                    Console.WriteLine(x.GetValue(r));
-                    Console.WriteLine(y.GetValue(r));
-                    r++;
-                }
-            }
-            return subtracted2 - subtracted;
+            double arraySub2 = Average(y);
+            int subtracted2 = (int) arraySub2 * x.Length;
+
+            return subtracted - subtracted2;
         }
 
         /// <summary>
@@ -384,24 +368,12 @@ namespace Underloading
         /// </summary>
         public static double SubArray(double[] x, double[] y)
         {
-            double subtracted = 0;
-            double subtracted2 = 0;
-            int i = 0;
-            int r = 0;
+            double arraySub1 = Average(x);
+            double subtracted = arraySub1 * x.Length;
 
-            while (i <= x.Length)
-            {
-                if(i <= x.Length && r < y.Length)
-                {
-                    subtracted += x[i] - y[i];
-                    i++;
-                }
-                else if (r <= y.Length)
-                {
-                    subtracted2 += x[r] - y[r];
-                    r++;
-                }
-            }
+            double arraySub2 = Average(y);
+            double subtracted2 = arraySub2 * x.Length;
+            
             return subtracted - subtracted2;
         }
 
