@@ -479,8 +479,6 @@ namespace Underloading
             return max;
         }
 
-
-
         /// <summary>
         /// <c>ConvertToString</c> converts an integer array into a string, keeping the curly brackets.
         /// <para>
@@ -541,8 +539,66 @@ namespace Underloading
             }
             return inputToString;
         }
+        
+        /// <summary>
+        /// <c>ConvertToString</c> converts a string array into a string, keeping the curly brackets.
+        /// <para>
+        /// Requires:
+        /// </para>
+        /// <list type="string[]">
+        /// <item><description><para><em>An integer array</em></para></description></item>
+        /// </list>
+        /// <returns><strong>A string containing the contents of the double array</strong></returns>
+        /// </summary>
+        public static string ConvertToString(string[] x)
+        {
+            string inputToString = "{ ";
+            int i = 0;
 
+            foreach (string item in x)
+            {
+                if (i < x.Length - 1)
+                {
+                    inputToString += $"\"{Convert.ToString(x.GetValue(i))}\", ";
+                }
+                else
+                {
+                    inputToString += $"\"{Convert.ToString(x.GetValue(i))}\" }}";
+                }
+                i++;
+            }
+            return inputToString;
+        }
 
+        /// <summary>
+        /// <c>ConvertToString</c> converts a character array into a string, keeping the curly brackets.
+        /// <para>
+        /// Requires:
+        /// </para>
+        /// <list type="char[]">
+        /// <item><description><para><em>An integer array</em></para></description></item>
+        /// </list>
+        /// <returns><strong>A string containing the contents of the double array</strong></returns>
+        /// </summary>
+        public static string ConvertToString(char[] x)
+        {
+            string inputToString = "{ ";
+            int i = 0;
+
+            foreach (char item in x)
+            {
+                if (i < x.Length - 1)
+                {
+                    inputToString += $"'{Convert.ToString(x.GetValue(i))}', ";
+                }
+                else
+                {
+                    inputToString += $"'{Convert.ToString(x.GetValue(i))}' }}";
+                }
+                i++;
+            }
+            return inputToString;
+        }
 
         /// <summary>
         /// <c>Min</c> gets the minimum number from an integer array.
@@ -595,8 +651,6 @@ namespace Underloading
             }
             return min;
         }
-
-
 
         /// <summary>
         /// <c>DupeArray</c> duplicates an array the amount of times the user specifies.
