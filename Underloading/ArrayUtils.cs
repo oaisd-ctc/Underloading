@@ -109,7 +109,7 @@ namespace Underloading
             {
                 if(i <= x.Length && r < y.Length)
                 {
-                    added = x[i] + y[i];
+                    added += x[i] + y[i];
                     i++;
                 }
                 else if (r <= y.Length)
@@ -221,7 +221,7 @@ namespace Underloading
                 {
                     if (x[i] > x[j])
                     {
-                        t = (int) x[i];
+                        t = x[i];
                         x[i] = x[j];
                         x[j] = t;
                     }
@@ -275,7 +275,7 @@ namespace Underloading
         /// </summary>
         public static string SortDescending(double[] x)
         {
-            int t = 0;
+            double t = 0;
 
             for (int i = 0; i <= x.Length -1; i++)
             {
@@ -283,7 +283,7 @@ namespace Underloading
                 {
                     if (x[i] < x[j])
                     {
-                        t = (int) x[i];
+                        t = x[i];
                         x[i] = x[j];
                         x[j] = t;
                     }
