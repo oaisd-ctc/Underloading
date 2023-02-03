@@ -354,15 +354,15 @@ namespace Underloading
             string arrayToString = "{ ";
             int i = 0;
 
-            foreach (int item in x)
+            foreach (int item in inputArr)
             {
-                if (i < x.Length - 1)
+                if (i < inputArr.Length - 1)
                 {
-                    arrayToString += $"{Convert.ToString(x.GetValue(i))}, ";
+                    arrayToString += $"{Convert.ToString(inputArr.GetValue(i))}, ";
                 }
                 else
                 {
-                    arrayToString += $"{Convert.ToString(x.GetValue(i))} }}";
+                    arrayToString += $"{Convert.ToString(inputArr.GetValue(i))} }}";
                 }
                 i++;
             }
