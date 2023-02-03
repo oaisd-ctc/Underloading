@@ -372,7 +372,7 @@ namespace Underloading
             {
                 char[] charArrayOfInput = ToCharArray(input);
 
-                string letter = charArrayOfInput.GetValue(i).ToString();
+                string? letter = charArrayOfInput.GetValue(i).ToString();
                 reversedString += letter;
             }
 
@@ -606,7 +606,7 @@ namespace Underloading
          */
         public static string UserInput()
         {
-            string userInput = Console.ReadLine();
+            string? userInput = Console.ReadLine();
 
             return userInput;
         }
