@@ -24,8 +24,6 @@ public class Test
         Assert.Equal(desiredOutcome, ArrayUtils.AddArray(testArray1, testArray2));
     }
 
-
-
     [Fact]
     public void test_sub_array_with_ints()
     {
@@ -35,6 +33,7 @@ public class Test
 
         Assert.Equal(desiredOutcome, ArrayUtils.SubArray(testArray1, testArray2));
     }
+
     [Fact]
     public void test_sub_array_with_doubles()
     {
@@ -45,8 +44,6 @@ public class Test
         Assert.Equal(desiredOutcome, ArrayUtils.SubArray(testArray1, testArray2));
     }
 
-
-
     [Fact]
     public void test_average_with_ints()
     {
@@ -56,6 +53,7 @@ public class Test
 
         Assert.Equal(desiredOutcome, ArrayUtils.Average(testArray1));
     }
+
     [Fact]
     public void test_average_with_doubles()
     {
@@ -66,28 +64,27 @@ public class Test
         Assert.Equal(desiredOutcome, ArrayUtils.Average(testArray1));
     }
 
-
-
     [Fact]
     public void test_dupeArray_with_ints()
     {
         int[] testArray1 = {1, 4, 18, 7, 9, 53};
+        int copies = 2;
 
         string desiredOutcome = "{ 1, 4, 18, 7, 9, 53 }\n{ 1, 4, 18, 7, 9, 53 }\n";
 
-        Assert.Equal(desiredOutcome, ArrayUtils.Dupe(testArray1));
+        Assert.Equal(desiredOutcome, ArrayUtils.Dupe(testArray1, copies));
     }
+
     [Fact]
     public void test_dupeArray_with_doubles()
     {
         double[] testArray1 = {1.1, 4.4, 18.18, 7.7, 9.9, 53.53};
+        int copies = 2;
 
         string desiredOutcome = "{ 1.1, 4.4, 18.18, 7.7, 9.9, 53.53 }\n{ 1.1, 4.4, 18.18, 7.7, 9.9, 53.53 }\n";
 
-        Assert.Equal(desiredOutcome, ArrayUtils.Dupe(testArray1));
+        Assert.Equal(desiredOutcome, ArrayUtils.Dupe(testArray1, copies));
     }
-
-
 
     [Fact]
     public void test_max_with_ints()
@@ -98,6 +95,7 @@ public class Test
 
         Assert.Equal(desiredOutcome, ArrayUtils.Max(testArray1));
     }
+
     [Fact]
     public void test_max_with_doubles()
     {
@@ -108,8 +106,6 @@ public class Test
         Assert.Equal(desiredOutcome, ArrayUtils.Max(testArray1));
     }
 
-
-
     [Fact]
     public void test_min_with_ints()
     {
@@ -119,6 +115,7 @@ public class Test
 
         Assert.Equal(desiredOutcome, ArrayUtils.Min(testArray1));
     }
+
     [Fact]
     public void test_min_with_doubles()
     {
@@ -129,8 +126,6 @@ public class Test
         Assert.Equal(desiredOutcome, ArrayUtils.Min(testArray1));
     }
 
-
-
     [Fact]
     public void test_toString_with_ints()
     {
@@ -140,6 +135,7 @@ public class Test
 
         Assert.Equal(desiredOutcome, ArrayUtils.ConvertToString(testArray1));
     }
+
     [Fact]
     public void test_toString_with_doubles()
     {
@@ -150,8 +146,6 @@ public class Test
         Assert.Equal(desiredOutcome, ArrayUtils.ConvertToString(testArray1));
     }
 
-
-
     [Fact]
     public void test_product_with_ints()
     {
@@ -161,6 +155,7 @@ public class Test
 
         Assert.Equal(desiredOutcome, ArrayUtils.Product(testArray1));
     }
+
     [Fact]
     public void test_product_with_doubles()
     {
@@ -171,8 +166,6 @@ public class Test
         Assert.Equal(desiredOutcome, ArrayUtils.Product(testArray1));
     }
 
-
-
     [Fact]
     public void test_sort_ascending_with_ints()
     {
@@ -182,6 +175,7 @@ public class Test
 
         Assert.Equal(desiredOutcome, ArrayUtils.SortAscending(testArray1));
     }
+
     [Fact]
     public void test_sort_ascending_with_doubles()
     {
@@ -192,8 +186,6 @@ public class Test
         Assert.Equal(desiredOutcome, ArrayUtils.SortAscending(testArray1));
     }
 
-
-
     [Fact]
     public void test_sort_descending_with_ints()
     {
@@ -203,6 +195,7 @@ public class Test
 
         Assert.Equal(desiredOutcome, ArrayUtils.SortDescending(testArray1));
     }
+
     [Fact]
     public void test_sort_descending_with_doubles()
     {
@@ -213,8 +206,6 @@ public class Test
         Assert.Equal(desiredOutcome, ArrayUtils.SortDescending(testArray1));
     }
 
-
-
     [Fact]
     public void test_sum_with_ints()
     {
@@ -224,6 +215,7 @@ public class Test
 
         Assert.Equal(desiredOutcome, ArrayUtils.Sum(testArray1));
     }
+
     [Fact]
     public void test_sum_with_doubles()
     {

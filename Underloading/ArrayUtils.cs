@@ -12,16 +12,20 @@ namespace Underloading
         /// </list>
         /// <returns><strong>An int containing the average of the integer array</strong></returns>
         /// </summary>
-        public static double Average(int[] x)
+        /// <param name="inputArr">
+        /// The input array
+        /// </param>
+        public static double Average(int[] inputArr)
         {
             double ans = 0.0;
             int i = 0;
-            foreach(int y in x)
+
+            foreach(int index in inputArr)
             { 
-                ans += x[i];
+                ans += inputArr[i];
                 i++;
             }
-            return ans / x.Length;
+            return ans / inputArr.Length;
         }
 
         /// <summary>
@@ -34,16 +38,19 @@ namespace Underloading
         /// </list>
         /// <returns><strong>A double containing the average of the double array</strong></returns>
         /// </summary>
-        public static double Average(double[] x)
+        /// <param name="inputArr">
+        /// The input array
+        /// </param>
+        public static double Average(double[] inputArr)
         {
             double ans = 0.0;
             int i = 0;
-            foreach(int y in x)
+            foreach(int index in inputArr)
             {
-                ans += x[i];
+                ans += inputArr[i];
                 i++;
             }
-            return ans / x.Length;
+            return ans / inputArr.Length;
         }
 
         
@@ -61,23 +68,29 @@ namespace Underloading
         /// </list>
         /// <returns><strong>An int containing the product of the two arrays</strong></returns>
         /// </summary>
-        public static int AddArray(int[] x, int[] y)
+        /// <param name="inputArrX">
+        /// The first input array
+        /// </param>
+        /// <param name="inputArrY">
+        /// The second input array
+        /// </param>
+        public static int AddArray(int[] inputArrX, int[] inputArrY)
         {
             int added = 0;
             int added2 = 0;
             int i = 0;
             int r = 0;
 
-            while (i < x.Length && r < y.Length)
+            while (i < inputArrX.Length && r < inputArrY.Length)
             {
-                if (i <= x.Length)
+                if (i <= inputArrX.Length)
                 {
-                    added += x[i] + y[i];
+                    added += inputArrX[i] +inputArrY[i];
                     i++;
                 }
-                else if (r <= y.Length)
+                else if (r <= inputArrY.Length)
                 {
-                    added2 += x[r] + y[r];
+                    added2 += inputArrX[r] + inputArrY[r];
                     r++;
                 }
             }
@@ -98,23 +111,29 @@ namespace Underloading
         /// </list>
         /// <returns><strong>A double containing the product of the arrays</strong></returns>
         /// </summary>
-        public static double AddArray(double[] x, double[] y)
+        /// <param name="inputArrX">
+        /// The first input array
+        /// </param>
+        /// <param name="inputArrY">
+        /// The second input array
+        /// </param>
+        public static double AddArray(double[] inputArrX, double[] inputArrY)
         {
             double added = 0;
             double added2 = 0;
             int i = 0;
             int r = 0;
 
-            while (i <= x.Length - 1)
+            while (i <= inputArrX.Length - 1)
             {
-                if(i <= x.Length && r < y.Length)
+                if(i <= inputArrX.Length && r < inputArrY.Length)
                 {
-                    added += x[i] + y[i];
+                    added += inputArrX[i] + inputArrY[i];
                     i++;
                 }
-                else if (r <= y.Length)
+                else if (r <= inputArrY.Length)
                 {
-                    added2 += x[r] + y[r];
+                    added2 += inputArrX[r] + inputArrY[r];
                     r++;
                 }
             }
@@ -133,14 +152,17 @@ namespace Underloading
         /// </list>
         /// <returns><strong>An int containing the product </strong></returns>
         /// </summary>
-        public static int Product(int[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static int Product(int[] inputArr)
         {
             int ans = 1;
             int i = 0;
 
-            foreach(int y in x)
+            foreach(int index in inputArr)
             {
-                ans = ans * x[i];
+                ans = ans * inputArr[i];
                 i++;
             }
             return ans;
@@ -156,14 +178,16 @@ namespace Underloading
         /// </list>
         /// <returns><strong>A double containing the product</strong></returns>
         /// </summary>
-        public static double Product(double[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static double Product(double[] inputArr)
         {
             double ans = 1.0;
             int i = 0;
-            
-            foreach(int y in  x)
+            foreach(int index in inputArr)
             {
-                ans = ans * x[i];
+                ans = ans * inputArr[i];
                 i++;
             }
             return ans;
@@ -181,23 +205,26 @@ namespace Underloading
         /// </list>
         /// <returns><strong>The sorted integer array</strong></returns>
         /// </summary>
-        public static string SortAscending(int[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static string SortAscending(int[] inputArr)
         {
             int t = 0;
 
-            for (int i = 0; i <= x.Length - 1; i++)
+            for (int i = 0; i <= inputArr.Length - 1; i++)
             {
-                for (int j = i+1; j < x.Length; j++)
+                for (int j = i+1; j < inputArr.Length; j++)
                 {
-                    if (x[i] > x[j])
+                    if (inputArr[i] > inputArr[j])
                     {
-                        t = x[i];
-                        x[i] = x[j];
-                        x[j] = t;
+                        t = inputArr[i];
+                        inputArr[i] = inputArr[j];
+                        inputArr[j] = t;
                     }
                 }
             }
-            string xString = ConvertToString(x);
+            string xString = ConvertToString(inputArr);
             return xString;
         }
 
@@ -211,23 +238,26 @@ namespace Underloading
         /// </list>
         /// <returns><strong>The sorted double array</strong></returns>
         /// </summary>
-        public static string SortAscending(double[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static string SortAscending(double[] inputArr)
         {
             double t = 0;
 
-            for (int i = 0; i <= x.Length - 1; i++)
+            for (int i = 0; i <= inputArr.Length - 1; i++)
             {
-                for (int j = i + 1; j < x.Length; j++)
+                for (int j = i + 1; j < inputArr.Length; j++)
                 {
-                    if (x[i] > x[j])
+                    if (inputArr[i] > inputArr[j])
                     {
-                        t = x[i];
-                        x[i] = x[j];
-                        x[j] = t;
+                        t = inputArr[i];
+                        inputArr[i] = inputArr[j];
+                        inputArr[j] = t;
                     }
                 }
             }
-            string xString = ConvertToString(x);
+            string xString = ConvertToString(inputArr);
             return xString;
         }
 
@@ -243,23 +273,26 @@ namespace Underloading
         /// </list>
         /// <returns><strong>The sorted integer array</strong></returns>
         /// </summary>
-        public static string SortDescending(int[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static string SortDescending(int[] inputArr)
         {
             int t = 0;
 
-            for (int i = 0; i <= x.Length -1; i++)
+            for (int i = 0; i <= inputArr.Length -1; i++)
             {
-                for (int j = i+1; j < x.Length; j++)
+                for (int j = i+1; j < inputArr.Length; j++)
                 {
-                    if (x[i] < x[j])
+                    if (inputArr[i] < inputArr[j])
                     {
-                        t = x[i];
-                        x[i] = x[j];
-                        x[j] = t;
+                        t = inputArr[i];
+                        inputArr[i] = inputArr[j];
+                        inputArr[j] = t;
                     }
                 }
             }
-            string xString = ArrayToString(x);
+            string xString = ArrayToString(inputArr);
             return xString;
         }
 
@@ -273,47 +306,50 @@ namespace Underloading
         /// </list>
         /// <returns><strong>The sorted double array</strong></returns>
         /// </summary>
-        public static string SortDescending(double[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static string SortDescending(double[] inputArr)
         {
             double t = 0;
 
-            for (int i = 0; i <= x.Length -1; i++)
+            for (int i = 0; i <= inputArr.Length -1; i++)
             {
-                for (int j = i+1; j < x.Length; j++)
+                for (int j = i+1; j < inputArr.Length; j++)
                 {
-                    if (x[i] < x[j])
+                    if (inputArr[i] < inputArr[j])
                     {
-                        t = x[i];
-                        x[i] = x[j];
-                        x[j] = t;
+                        t = inputArr[i];
+                        inputArr[i] = inputArr[j];
+                        inputArr[j] = t;
                     }
                 }
             }
-            string xString = ArrayToString(x);
+            string xString = ArrayToString(inputArr);
             return xString;
         }
 
-        public static string ArrayToString(int[] x)
+        public static string ArrayToString(int[] inputArr)
         {
             string arrayToString = "{ ";
             int i = 0;
 
-            foreach (int item in x)
+            foreach (int item in inputArr)
             {
-                if (i < x.Length - 1)
+                if (i < inputArr.Length - 1)
                 {
-                    arrayToString += $"{Convert.ToString(x.GetValue(i))}, ";
+                    arrayToString += $"{Convert.ToString(inputArr.GetValue(i))}, ";
                 }
                 else
                 {
-                    arrayToString += $"{Convert.ToString(x.GetValue(i))} }}";
+                    arrayToString += $"{Convert.ToString(inputArr.GetValue(i))} }}";
                 }
                 i++;
             }
             return arrayToString;
         }
 
-        public static string ArrayToString(double[] x)
+        public static string ArrayToString(double[] inputArr)
         {
             string arrayToString = "{ ";
             int i = 0;
@@ -345,13 +381,19 @@ namespace Underloading
         /// </list>
         /// <returns><strong>An int containing the difference of the two arrays</strong></returns>
         /// </summary>
-        public static int SubArray(int[] x, int[] y)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static int SubArray(int[] inputArrX, int[] inputArrY)
         {
-            double arraySub1 = Average(x);
-            int subtracted = (int) arraySub1 * x.Length;
+            double arraySub1 = Average(inputArrX);
+            int subtracted = (int) arraySub1 * inputArrX.Length;
 
-            double arraySub2 = Average(y);
-            int subtracted2 = (int) arraySub2 * x.Length;
+            double arraySub2 = Average(inputArrY);
+            int subtracted2 = (int) arraySub2 * inputArrX.Length;
 
             return subtracted - subtracted2;
         }
@@ -366,13 +408,19 @@ namespace Underloading
         /// </list>
         /// <returns><strong>An int containing the difference of the two arrays</strong></returns>
         /// </summary>
-        public static double SubArray(double[] x, double[] y)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static double SubArray(double[] inputArrX, double[] inputArrY)
         {
-            double arraySub1 = Average(x);
-            double subtracted = arraySub1 * x.Length;
+            double arraySub1 = Average(inputArrX);
+            double subtracted = arraySub1 * inputArrX.Length;
 
-            double arraySub2 = Average(y);
-            double subtracted2 = arraySub2 * x.Length;
+            double arraySub2 = Average(inputArrY);
+            double subtracted2 = arraySub2 * inputArrX.Length;
             
             return subtracted - subtracted2;
         }
@@ -389,14 +437,17 @@ namespace Underloading
         /// </list>
         /// <returns><strong>An int containing the sum of the numbers in the array</strong></returns>
         /// </summary>
-        public static int Sum(int[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static int Sum(int[] inputArr)
         {
             int sum = 0;
             int i = 0;
 
-            foreach(int y in x)
+            foreach(int inputArrY in inputArr)
             {
-                sum = sum + x[i];
+                sum = sum + inputArr[i];
                 i++;
             }
             return sum;
@@ -411,15 +462,18 @@ namespace Underloading
         /// </list>
         /// <returns><strong>A double containing the sum of the numbers in the array</strong></returns>
         /// </summary>
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
 
-        public static double Sum(double[] x)
+        public static double Sum(double[] inputArr)
         {
             double sum = 0.0;
             int i = 0;
 
-            foreach(int y in x)
+            foreach(int index in inputArr)
             {
-                sum = sum + x[i];
+                sum = sum + inputArr[i];
                 i++;
             }
             return sum;
@@ -437,16 +491,19 @@ namespace Underloading
         /// </list>
         /// <returns><strong>An int containing the maximum of the integer array</strong></returns>
         /// </summary>
-        public static int Max(int[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static int Max(int[] inputArr)
         {
-            int max = x[0];
+            int max = inputArr[0];
             int i = 0;
 
-            foreach(int y in x)
+            foreach(int index in inputArr)
             {
-                if (x[i] > max)
+                if (inputArr[i] > max)
                 {
-                    max = x[i];
+                    max = inputArr[i];
                 }
                 i++;
             }
@@ -463,16 +520,19 @@ namespace Underloading
         /// </list>
         /// <returns><strong>A double containing the maximum of the double array</strong></returns>
         /// </summary>
-        public static double Max(double[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static double Max(double[] inputArr)
         {
-            double max = x[0];
+            double max = inputArr[0];
             int i = 0;
 
-            foreach(int y in x)
+            foreach(int index in inputArr)
             {
-                if (x[i] > max)
+                if (inputArr[i] > max)
                 {
-                    max = x[i];
+                    max = inputArr[i];
                 }
                 i++;
             }
@@ -489,20 +549,23 @@ namespace Underloading
         /// </list>
         /// <returns><strong>A string containing the contents of the integer array</strong></returns>
         /// </summary>
-        public static string ConvertToString(int[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static string ConvertToString(int[] inputArr)
         {
             string inputToString = "{ ";
             int i = 0;
 
-            foreach (int item in x)
+            foreach (int item in inputArr)
             {
-                if (i < x.Length - 1)
+                if (i < inputArr.Length - 1)
                 {
-                    inputToString += $"{Convert.ToString(x.GetValue(i))}, ";
+                    inputToString += $"{Convert.ToString(inputArr.GetValue(i))}, ";
                 }
                 else
                 {
-                    inputToString += $"{Convert.ToString(x.GetValue(i))} }}";
+                    inputToString += $"{Convert.ToString(inputArr.GetValue(i))} }}";
                 }
                 i++;
             }
@@ -520,20 +583,23 @@ namespace Underloading
         /// </list>
         /// <returns><strong>A string containing the contents of the double array</strong></returns>
         /// </summary>
-        public static string ConvertToString(double[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static string ConvertToString(double[] inputArr)
         {
             string inputToString = "{ ";
             int i = 0;
 
-            foreach (int item in x)
+            foreach (int item in inputArr)
             {
-                if (i < x.Length - 1)
+                if (i < inputArr.Length - 1)
                 {
-                    inputToString += $"{Convert.ToString(x.GetValue(i))}, ";
+                    inputToString += $"{Convert.ToString(inputArr.GetValue(i))}, ";
                 }
                 else
                 {
-                    inputToString += $"{Convert.ToString(x.GetValue(i))} }}";
+                    inputToString += $"{Convert.ToString(inputArr.GetValue(i))} }}";
                 }
                 i++;
             }
@@ -550,20 +616,23 @@ namespace Underloading
         /// </list>
         /// <returns><strong>A string containing the contents of the double array</strong></returns>
         /// </summary>
-        public static string ConvertToString(string[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static string ConvertToString(string[] inputArr)
         {
             string inputToString = "{ ";
             int i = 0;
 
-            foreach (string item in x)
+            foreach (string item in inputArr)
             {
-                if (i < x.Length - 1)
+                if (i < inputArr.Length - 1)
                 {
-                    inputToString += $"\"{Convert.ToString(x.GetValue(i))}\", ";
+                    inputToString += $"\"{Convert.ToString(inputArr.GetValue(i))}\", ";
                 }
                 else
                 {
-                    inputToString += $"\"{Convert.ToString(x.GetValue(i))}\" }}";
+                    inputToString += $"\"{Convert.ToString(inputArr.GetValue(i))}\" }}";
                 }
                 i++;
             }
@@ -580,20 +649,23 @@ namespace Underloading
         /// </list>
         /// <returns><strong>A string containing the contents of the double array</strong></returns>
         /// </summary>
-        public static string ConvertToString(char[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static string ConvertToString(char[] inputArr)
         {
             string inputToString = "{ ";
             int i = 0;
 
-            foreach (char item in x)
+            foreach (char item in inputArr)
             {
-                if (i < x.Length - 1)
+                if (i < inputArr.Length - 1)
                 {
-                    inputToString += $"'{Convert.ToString(x.GetValue(i))}', ";
+                    inputToString += $"'{Convert.ToString(inputArr.GetValue(i))}', ";
                 }
                 else
                 {
-                    inputToString += $"'{Convert.ToString(x.GetValue(i))}' }}";
+                    inputToString += $"'{Convert.ToString(inputArr.GetValue(i))}' }}";
                 }
                 i++;
             }
@@ -610,16 +682,19 @@ namespace Underloading
         /// </list>
         /// <returns><strong>An int containing the minimum of the integer array</strong></returns>
         /// </summary>
-        public static int Min(int[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static int Min(int[] inputArr)
         {
-            int min = x[0];
+            int min = inputArr[0];
             int i = 0;
 
-            foreach(int y in x)
+            foreach(int index in inputArr)
             {
-                if (x[i] < min)
+                if (inputArr[i] < min)
                 {
-                    min = x[i];
+                    min = inputArr[i];
                 }
                 i++;
             }
@@ -636,16 +711,19 @@ namespace Underloading
         /// </list>
         /// <returns><strong>A double containing the minimum of the double array</strong></returns>
         /// </summary>
-        public static double Min(double[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        public static double Min(double[] inputArr)
         {
-            double min = x[0];
+            double min = inputArr[0];
             int i = 0;
 
-            foreach(int y in x)
+            foreach(int index in inputArr)
             {
-                if (x[i] < min)
+                if (inputArr[i] < min)
                 {
-                    min = x[y];
+                    min = inputArr[index];
                 }
                 i++;
             }
@@ -662,30 +740,32 @@ namespace Underloading
         /// </list>
         /// <returns><strong>A string containing the duped arrays</strong></returns>
         /// </summary>
-        public static string Dupe(int[] x)
+        /// <param name="inputArr">
+        /// The first input array
+        /// </param>
+        /// <param name="copies">
+        /// The amount of copies to make
+        /// </param>
+        public static string Dupe(int[] inputArr, int copies)
         {
-            Console.Write("Enter how many times would you like to duplicate your array: ");
-            int num = Convert.ToInt32(Console.ReadLine());
+            int mult = (inputArr.Length + 1) * copies;
 
-            int mult = (x.Length + 1) * num;
-
-            int[] y = new int[x.Length];
-
+            int[] inputArrY = new int[inputArr.Length];
             string fullString = "";
 
             int r = 0;
             for (int i = 0; i < mult; i++)
             {
-                if (r < x.Length)
+                if (r < inputArr.Length)
                 {
-                    y[r] = x[r];
+                    inputArrY[r] = inputArr[r];
                     r++;
                 }
-                else if (r == x.Length)
+                else if (r == inputArr.Length)
                 {
                     r = 0;
 
-                    int[] newerArr = y;
+                    int[] newerArr = inputArrY;
                     fullString += $"{ConvertToString(newerArr)}\n";
                 }
             }
@@ -703,30 +783,32 @@ namespace Underloading
         /// </list>
         /// <returns><strong>A string containing the duped arrays</strong></returns>
         /// </summary>
-        public static string Dupe(double[] x)
+        /// <param name="inputArrX">
+        /// The first input array
+        /// </param>
+        /// <param name="copies">
+        /// The amount of copies to make
+        /// </param>
+        public static string Dupe(double[] inputArrX, int copies)
         {
-            Console.Write("Enter how many times would you like to duplicate your array: ");
-            int num = Convert.ToInt32(Console.ReadLine());
+            int mult = (inputArrX.Length + 1) * copies;
 
-            int mult = (x.Length + 1) * num;
-
-            double[] y = new double[x.Length];
-
+            double[] inputArrY = new double[inputArrX.Length];
             string fullString = "";
 
             int r = 0;
             for (int i = 0; i < mult; i++)
             {
-                if (r < x.Length)
+                if (r < inputArrX.Length)
                 {
-                    y[r] = x[r];
+                    inputArrY[r] = inputArrX[r];
                     r++;
                 }
-                else if (r == x.Length)
+                else if (r == inputArrX.Length)
                 {
                     r = 0;
 
-                    double[] newerArr = y;
+                    double[] newerArr = inputArrY;
                     fullString += $"{ConvertToString(newerArr)}\n";
                 }
             }
