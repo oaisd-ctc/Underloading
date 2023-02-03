@@ -4,206 +4,265 @@ using Xunit;
 public class Tests
 {
     [Fact]
-    public void TestAdd()
+    public void TestAddgInt()
     {
-        Assert.Equal(4, MathUtils.Add(2, 2));
+        int a = 2;
+        int b = 2;
+        Assert.Equal(4, MathUtils.Add(a, b));
     }
     [Fact]
-    public void TestAdd(float a, float b)
+    public void TestAddFloat()
     {
-        Assert.Equal(4, MathUtils.Add(2, 2));
+        float a = 2;
+        float b = 2;
+        Assert.Equal(4, MathUtils.Add(a, b));
     }
     [Fact]
-    public void TestAdd(double a, double b)
+    public void TestAddDouble()
     {
-        Assert.Equal(4, MathUtils.Add(2, 2));
-    }
-
-    [Fact]
-    public void TestSubtract(int a, int b)
-    {
-        Assert.Equal(2, MathUtils.Subtract(4, 2));
-    }
-    [Fact]
-    public void TestSubtract(float a, float b)
-    {
-        Assert.Equal(2, MathUtils.Subtract(4, 2));
-    }
-    [Fact]
-    public void TestSubtract(double a, double b)
-    {
-        Assert.Equal(2, MathUtils.Subtract(4, 2));
+        double a = 2;
+        double b = 2;
+        Assert.Equal(4, MathUtils.Add(a, b));
     }
 
     [Fact]
-    public void TestMultiply(int a, int b)
+    public void TestSubtractInt()
     {
-        Assert.Equal(6, MathUtils.Multiply(3, 2));
+        int a = 4;
+        int b = 2;
+        Assert.Equal(2, MathUtils.Subtract(a, b));
+    }
+    [Fact]
+    public void TestSubtractFloat()
+    {
+        float a = 4;
+        float b = 2;
+        Assert.Equal(2, MathUtils.Subtract(a, b));
+    }
+    [Fact]
+    public void TestSubtractDouble()
+    {
+        double a = 4;
+        double b = 2;
+        Assert.Equal(2, MathUtils.Subtract(a, b));
+    }
+
+    [Fact]
+    public void TestMultiplyInt()
+    {
+        int a = 3;
+        int b = 2;
+        Assert.Equal(6, MathUtils.Multiply(a, b));
     }   
     [Fact]
-    public void TestMultiply(float a, float b)
+    public void TestMultiplyFloat()
     {
-        Assert.Equal(6, MathUtils.Multiply(3, 2));
+        float a = 3;
+        float b = 2;
+        Assert.Equal(6, MathUtils.Multiply(a, b));
     }    
     [Fact]
-    public void TestMultiply(double a, double b)
+    public void TestMultiplyDouble()
     {
-        Assert.Equal(6, MathUtils.Multiply(3, 2));
+        double a = 3;
+        double b = 2;
+        Assert.Equal(6, MathUtils.Multiply(a, b));
     }    
 
     [Fact]
-    public void TestDivide(int x, int y)
+    public void TestDivideInt()
     {
-        Assert.Equal(2, MathUtils.Divide(4, 2));
+        int x = 4;
+        int y = 2;
+        Assert.Equal(2, MathUtils.Divide(a, b));
     }
     [Fact]
-    public void TestDivide(float x, float y)
+    public void TestDivideFloat()
     {
-        Assert.Equal(6, MathUtils.Multiply(3, 2));
+        float x = 3;
+        float y = 2;
+        Assert.Equal(6, MathUtils.Multiply(a, b));
     }  
     [Fact]
-    public void TestDivide(double x, double y)
+    public void TestDivideDouble()
     {
-        Assert.Equal(6, MathUtils.Multiply(3, 2));
+        double x = 3;
+        double y = 2;
+        Assert.Equal(6, MathUtils.Multiply(a, b));
     }  
 
     [Fact]
-    public void TestPow(int x, int y)
+    public void TestPowInt()
     {
-        Assert.Equal(9, MathUtils.Pow(3, 2));
+        int x = 3;
+        int y = 2;
+        Assert.Equal(9, MathUtils.Pow(a, b));
     }
     [Fact]
-    public void TestPow(float x, float y)
+    public void TestPowFloat()
     {
-        Assert.Equal(9, MathUtils.Pow(3, 2));
+        float x = 3;
+        float y = 2;
+        Assert.Equal(9, MathUtils.Pow(a, b));
     }
     [Fact]
-    public void TestPow(double x, double y)
+    public void TestPowDouble()
     {
-        Assert.Equal(9, MathUtils.Pow(3, 2));
-    }
-
-    [Fact]
-    public void TestSqrt(int a)
-    {
-        Assert.Equal(2, MathUtils.Sqrt(4));
-    }
-    [Fact]
-    public void TestSqrt(float a)
-    {
-        Assert.Equal(2, MathUtils.Sqrt(4));
-    }
-    [Fact]
-    public void TestSqrt(double a)
-    {
-        Assert.Equal(2, MathUtils.Sqrt(4));
+        double x = 3;
+        double y = 2;
+        Assert.Equal(9, MathUtils.Pow(a, b));
     }
 
     [Fact]
-    public void TestMin(int a, int b)
+    public void TestSqrtInt()
     {
-        Assert.Equal(2, MathUtils.Min(4, 2));
+        int a = 4;
+        Assert.Equal(2, MathUtils.Sqrt(a));
     }
     [Fact]
-    public void TestMin(float a, float b)
+    public void TestSqrtFloat()
     {
-        Assert.Equal(2, MathUtils.Min(4, 2));
+        float a = 4;
+        Assert.Equal(2, MathUtils.Sqrt(a));
     }
     [Fact]
-    public void TestMin(double a, double b)
+    public void TestSqrtDouble()
     {
-        Assert.Equal(2, MathUtils.Min(4, 2));
-    }
-
-    [Fact]
-    public void TestMax(int a, int b)
-    {
-        Assert.Equal(2, MathUtils.Max(1, 2));
-    }
-    [Fact]
-    public void TestMax(float a, float b)
-    {
-        Assert.Equal(2, MathUtils.Max(1, 2));
-    }
-    [Fact]
-    public void TestMax(double a, double b)
-    {
-        Assert.Equal(2, MathUtils.Max(1, 2));
+        double a = 4;
+        Assert.Equal(2, MathUtils.Sqrt(a));
     }
 
     [Fact]
-    public void TestAbs(int a)
+    public void TestMinInt()
     {
-        Assert.Equal(1, MathUtils.Abs(-1));
+        int a = 4;
+        int b = 2;
+        Assert.Equal(2, MathUtils.Min(a, b));
     }
     [Fact]
-    public void TestAbs(float a)
+    public void TestMinFloat()
     {
-        Assert.Equal(1, MathUtils.Abs(-1));
+        float a = 4;
+        float b = 2;
+        Assert.Equal(2, MathUtils.Min(a, b));
     }
     [Fact]
-    public void TestAbs(double a)
+    public void TestMinDouble()
     {
-        Assert.Equal(1, MathUtils.Abs(-1));
+        double a = 4;
+        double b = 2;
+        Assert.Equal(2, MathUtils.Min(a, b));
     }
 
     [Fact]
-    public void TestMod(int a, int b)
+    public void TestMaxInt()
     {
-        Assert.Equal(1, MathUtils.Mod(4, 3));
+        int a = 1;
+        int b = 2;
+        Assert.Equal(2, MathUtils.Max(a, b));
     }
     [Fact]
-    public void TestMod(float a, float b)
+    public void TestMaxFloat()
     {
-        Assert.Equal(1, MathUtils.Mod(4, 3));
+        float a = 1;
+        float b = 2;
+        Assert.Equal(2, MathUtils.Max(a, b));
     }
     [Fact]
-    public void TestMod(decimal a, decimal b)
+    public void TestMaxDouble()
     {
-        
-        Assert.Equal(1, MathUtils.Mod(4, 3));
+        double a = 1;
+        double b = 2;
+        Assert.Equal(2, MathUtils.Max(a, b));
+    }
+
+    [Fact]
+    public void TestAbsInt()
+    {
+        int a = -1;
+        Assert.Equal(1, MathUtils.Abs(a));
+    }
+    [Fact]
+    public void TestAbsFloat()
+    {
+        float a = -1;
+        Assert.Equal(1, MathUtils.Abs(a));
+    }
+    [Fact]
+    public void TestAbsDouble()
+    {
+        double a = -1;
+        Assert.Equal(1, MathUtils.Abs(a));
+    }
+
+    [Fact]
+    public void TestModInt()
+    {
+        int a = 4;
+        int b = 3;
+        Assert.Equal(1, MathUtils.Mod(a, b));
+    }
+    [Fact]
+    public void TestModFloat()
+    {
+        float a = 4;
+        float b = 3;
+        Assert.Equal(1, MathUtils.Mod(a, b));
+    }
+    [Fact]
+    public void TestModDecimal()
+    {
+        decimal a = 4; 
+        decimal b = 3;
+        Assert.Equal(1, MathUtils.Mod(a, b));
     }
     
     [Fact]
-    public void TestCircleAreaFromRadius(int a)
+    public void TestCircleAreaFromRadiusInt()
     {
-        Assert.Equal(12, MathUtils.CircleAreaFromRadius(2));
+        int a = 2;
+        Assert.Equal(12, MathUtils.CircleAreaFromRadius(a));
     }
     [Fact]
-    public void TestCircleAreaFromRadius(float a)
+    public void TestCircleAreaFromRadiusFloat()
     {
-        Assert.Equal(12, MathUtils.CircleAreaFromRadius(2));
+        float a = 2;
+        Assert.Equal(12, MathUtils.CircleAreaFromRadius(a));
     }
     [Fact]
-    public void TestCircleAreaFromRadius(double a)
+    public void TestCircleAreaFromRadiusDouble()
     {
-        Assert.Equal(12, MathUtils.CircleAreaFromRadius(2));
+        double a = 2;
+        Assert.Equal(12, MathUtils.CircleAreaFromRadius(a));
     }
     
     [Fact]
-    public void TestSurfaceAreaOfCubeFromOneSide(int a)
+    public void TestSurfaceAreaOfCubeFromOneSideInt()
     {
-        Assert.Equal(24, MathUtils.SurfaceAreaOfCubeFromOneSide(2));
+        int a = 2;
+        Assert.Equal(24, MathUtils.SurfaceAreaOfCubeFromOneSide(a));
     }
     [Fact]
-    public void TestSurfaceAreaOfCubeFromOneSide(float a)
+    public void TestSurfaceAreaOfCubeFromOneSideFloat()
     {
-        Assert.Equal(24, MathUtils.SurfaceAreaOfCubeFromOneSide(2));
+        float a = 2;
+        Assert.Equal(24, MathUtils.SurfaceAreaOfCubeFromOneSide(a));
     }
     [Fact]
-    public void TestSurfaceAreaOfCubeFromOneSide(double a)
+    public void TestSurfaceAreaOfCubeFromOneSideDouble()
     {
-        Assert.Equal(24, MathUtils.SurfaceAreaOfCubeFromOneSide(2));
+        double a = 2;
+        Assert.Equal(24, MathUtils.SurfaceAreaOfCubeFromOneSide(a));
     }
 
     [Fact]
-    public void TestCirclePerimeterFromRadius()
+    public void TestCirclePerimeterFromRadiusInt()
     {
         int a = 2;
         Assert.Equal(12, MathUtils.CirclePerimeterFromRadius(a));
     }
     [Fact]
-    public void TestCirclePerimeterFromRadiusInt()
+    public void TestCirclePerimeterFromRadiusFloat()
     {
         float a = 2;
         Assert.Equal(12, MathUtils.CirclePerimeterFromRadius(a));
