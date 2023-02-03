@@ -185,7 +185,6 @@ namespace Underloading
         {
             double ans = 1.0;
             int i = 0;
-            
             foreach(int index in inputArr)
             {
                 ans = ans * inputArr[i];
@@ -355,15 +354,15 @@ namespace Underloading
             string arrayToString = "{ ";
             int i = 0;
 
-            foreach (int item in inputArr)
+            foreach (int item in x)
             {
-                if (i < inputArr.Length - 1)
+                if (i < x.Length - 1)
                 {
-                    arrayToString += $"{Convert.ToString(inputArr.GetValue(i))}, ";
+                    arrayToString += $"{Convert.ToString(x.GetValue(i))}, ";
                 }
                 else
                 {
-                    arrayToString += $"{Convert.ToString(inputArr.GetValue(i))} }}";
+                    arrayToString += $"{Convert.ToString(x.GetValue(i))} }}";
                 }
                 i++;
             }
@@ -752,7 +751,6 @@ namespace Underloading
             int mult = (inputArr.Length + 1) * copies;
 
             int[] inputArrY = new int[inputArr.Length];
-
             string fullString = "";
 
             int r = 0;
@@ -796,7 +794,6 @@ namespace Underloading
             int mult = (inputArrX.Length + 1) * copies;
 
             double[] inputArrY = new double[inputArrX.Length];
-
             string fullString = "";
 
             int r = 0;
