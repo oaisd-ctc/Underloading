@@ -160,12 +160,14 @@ namespace MyUtilities
     /// </returns>
     public static double Pow(int x, int y)
     {
-        int i = x;
-        while (i <= y)
+        int i = Convert.ToInt32(x);
+        int x2 = Convert.ToInt32(x);
+        while (y > 1)
         {
-            x *= i;
+            i *= x2;
+            y--;
         }
-        return x;
+        return i;
     }
     /// <summary>
     /// Finds one number to the power of another
@@ -178,11 +180,13 @@ namespace MyUtilities
     public static double Pow(float x, float y)
     {
         int i = Convert.ToInt32(x);
-        while (i <= y)
+        int x2 = Convert.ToInt32(x);
+        while (y > 1)
         {
-            x *= i;
+            i *= x2;
+            y--;
         }
-        return x;
+        return i;
     }
     /// <summary>
     /// Finds one number to the power of another
@@ -195,11 +199,13 @@ namespace MyUtilities
     public static double Pow(double x, double y)
     {
         int i = Convert.ToInt32(x);
-        while (i <= y)
+        int x2 = Convert.ToInt32(x);
+        while (y > 1)
         {
-            x *= i;
+            i *= x2;
+            y--;
         }
-        return x;
+        return i;
     }
 
     /// <summary>

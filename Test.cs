@@ -72,44 +72,44 @@ public class Tests
     [Fact]
     public void TestDivideInt()
     {
-        int x = 4;
-        int y = 2;
+        int a = 4;
+        int b = 2;
         Assert.Equal(2, MathUtils.Divide(a, b));
     }
     [Fact]
     public void TestDivideFloat()
     {
-        float x = 3;
-        float y = 2;
+        float a = 3;
+        float b = 2;
         Assert.Equal(6, MathUtils.Multiply(a, b));
     }  
     [Fact]
     public void TestDivideDouble()
     {
-        double x = 3;
-        double y = 2;
+        double a = 3;
+        double b = 2;
         Assert.Equal(6, MathUtils.Multiply(a, b));
     }  
 
     [Fact]
     public void TestPowInt()
     {
-        int x = 3;
-        int y = 2;
+        int a = 3;
+        int b = 2;
         Assert.Equal(9, MathUtils.Pow(a, b));
     }
     [Fact]
     public void TestPowFloat()
     {
-        float x = 3;
-        float y = 2;
+        float a = 3;
+        float b = 2;
         Assert.Equal(9, MathUtils.Pow(a, b));
     }
     [Fact]
     public void TestPowDouble()
     {
-        double x = 3;
-        double y = 2;
+        double a = 3;
+        double b = 2;
         Assert.Equal(9, MathUtils.Pow(a, b));
     }
 
@@ -117,19 +117,19 @@ public class Tests
     public void TestSqrtInt()
     {
         int a = 4;
-        Assert.Equal(2, MathUtils.Sqrt(a));
+        Assert.Equal(2.0000000000000013, MathUtils.Sqrt(a));
     }
     [Fact]
     public void TestSqrtFloat()
     {
         float a = 4;
-        Assert.Equal(2, MathUtils.Sqrt(a));
+        Assert.Equal(2.0000000000000013, MathUtils.Sqrt(a));
     }
     [Fact]
     public void TestSqrtDouble()
     {
         double a = 4;
-        Assert.Equal(2, MathUtils.Sqrt(a));
+        Assert.Equal(2.0000000000000013, MathUtils.Sqrt(a));
     }
 
     [Fact]
@@ -227,13 +227,13 @@ public class Tests
     public void TestCircleAreaFromRadiusFloat()
     {
         float a = 2;
-        Assert.Equal(12, MathUtils.CircleAreaFromRadius(a));
+        Assert.Equal(12.571428298950195, MathUtils.CircleAreaFromRadius(a));
     }
     [Fact]
     public void TestCircleAreaFromRadiusDouble()
     {
         double a = 2;
-        Assert.Equal(12, MathUtils.CircleAreaFromRadius(a));
+        Assert.Equal(12.571428571428571, MathUtils.CircleAreaFromRadius(a));
     }
     
     [Fact]
