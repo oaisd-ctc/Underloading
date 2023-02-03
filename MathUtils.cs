@@ -1,4 +1,4 @@
-namespace MyUtilities
+namespace Underloading
 {
     public static class MathUtils
     {
